@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+     
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="./animate.css">
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+     
+     
+	<link href='index.css' rel='stylesheet' type='text/css'>
+    <script src="index.js"></script>
+    <title>474 Snow/Climate Change Wireframe</title>
+</head>
+
+<body class="container text-center">
+    <div id='over'>
+    </div>
+    
+        <!-- video background code from http://slicejack.com/fullscreen-html5-video-background-css/ -->
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+                <source src="snow.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+          
+        <div class="box center animated fadeIn">
+              <div class = "paragraph">
+                <p>
+                    We're looking at some trends in global warming over time, as well as having detailed information about different areas and their yearly and total snowfall.  It's interesting to see how snow falls and levels change over time, and the trends that have changed overall.  Feel free to hover over different spots on the map to get more details about a region and that's snowfall.    
+                </p>
+                <p style="font-size:10px"><b>Note:</b> The interactions involve: a slider/button combo, to select viewing averages/trends or to select the different year the user wants to see.   The maps will populate with data on tempeerature and precipitation, as well as an aggregate map.  The user can mouse over different areas to see more details on the areas, and they can select areas to populate the detailed fact section about that region.
+                
+            </p>
+            </div>
+            
+            <div class="btn-group" id="measure_buttons" data-toggle="buttons" id="buttons_measure">
+                <label class="btn btn-primary active">
+                    <input value="temp" type="radio" class="measure" name="options" id="button_total" autocomplete="off" checked>Temperature
+                </label>
+                <label class="btn btn-primary">
+                    <input value="precip" type="radio" class="measure" name="options" id="button_gdp" autocomplete="off">Precipitation
+                </label>
+                <label class="btn btn-primary">
+                    <input value="both" type="radio" class="measure" name="options" id="button_pop" autocomplete="off">Both
+                </label>
+            </div>
+            
+            <br>
+            <br>
+            
+            <h3>Year</h3>
+            
+            <div id="slider" class="center">
+                <div class="slider">             
+                </div>
+            </div>
+            
+            <br>
+            
+            <span id="yearNum">2015</span>
+            <div class="vis clear">
+                <img class = "pic" src= "./img/temp/temp_image_1.jpg">
+            </div>
+            
+            <div class="clearfix"></div>
+            <div class = "region-details text-left">
+            <h1><b>Region: </b> Pacific Northwest</h1>
+            <ul>
+                <li>
+                    <b>Population: </b> 4,231,763,684
+                </li>
+                <li>
+                    <b>Average Snowfall 1960-1975: </b> 4,000 inches/year
+                </li>
+                <li>
+                    <b>Average Snowfall 2010-2015 </b> 3,000 inches per year
+                </li>
+                <li>
+                    <b>Percentage of Average U.S Snowfall </b> 16%
+                </li>    
+                <li>
+                    <b>Change in average snowfall since 1960 </b> -1,000 inches/year
+                </li>  
+                <li>
+                    <b>Change in average temperature since 1960</b> +15 degrees fahreinheit
+                </li>
+            </ul>
+            </div>
+            <p style="font-size:10px"><b>Note:</b> In the final project this section will have more detailed information about selected regions.  This will look different depending on how accurately kept the data is- but it might be less accurate in the past.  It will also be pretty and d3, but Daniel doesn't want to make that for a wireframe.  Video is from Reid Carrescia, taken from here on Vimeo: https://vimeo.com/8008374.
+                
+            </p>
+        </div>
+    </div>
+</body>
+</html>
